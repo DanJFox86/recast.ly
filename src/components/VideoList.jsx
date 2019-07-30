@@ -1,8 +1,10 @@
+import VideoListEntry from './VideoListEntry.js';
+
 var VideoList = (props) => (
   <div className="video-list">
     <ul>
-      {props.videos.map(video =>
-        <VideoListEntry video={video} />
+      {props.videos.map(element =>
+        <VideoListEntry video={element} />
       )}
     </ul>
   </div>
@@ -26,4 +28,7 @@ export default VideoList;
 <div><h5><em>videoListEntry</em> view goes here</h5></div>
 <div><h5><em>videoListEntry</em> view goes here</h5></div>
 <div><h5><em>videoListEntry</em> view goes here</h5></div>
-<div><h5><em>videoListEntry</em> view goes here</h5></div> */
+<div><h5><em>videoListEntry</em> view goes here</h5></div>
+Go back to line 7 later, getting a warning about Each child in an array or iterator should have a unique "key" prop. Check the render method of `VideoList`.
+
+*/

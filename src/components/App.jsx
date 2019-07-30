@@ -1,18 +1,21 @@
-
+import exampleVideoData from '../data/exampleVideoData.js';
+import VideoList from './VideoList.js';
+import VideoPlayer from './VideoPlayer.js';
+import Search from './Search.js';
 
 var App = () => (
   <div>
     <nav className="navbar">
       <div className="search-bar">
-        <div><h5><em>search</em> view goes here</h5></div>
+        <Search/>
       </div>
     </nav>
     <div className="row">
       <div className="video-player">
-        <div><h5><em>videoPlayer</em> view goes here</h5></div>
+        <VideoPlayer/>
       </div>
       <div className="video-list">
-        <div><h5><em>VideoList</em> view goes here</h5></div>
+        <VideoList videos={exampleVideoData}/>
       </div>
     </div>
   </div>
